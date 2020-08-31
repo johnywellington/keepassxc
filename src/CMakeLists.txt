@@ -214,11 +214,6 @@ if(MINGW)
             core/ScreenLockListenerWin.cpp
             gui/osutils/winutils/WinUtils.cpp)
 endif()
-if(MINGW OR (UNIX AND NOT APPLE))
-    set(keepassx_SOURCES
-            ${keepassx_SOURCES}
-            core/OSEventFilter.cpp)
-endif()
 
 set(keepassx_SOURCES ${keepassx_SOURCES}
         ../share/icons/icons.qrc
